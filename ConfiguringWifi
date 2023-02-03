@@ -1,0 +1,22 @@
+# Configure Wi-Fi on install
+# Immediately sudo apt-get Network-Manager
+# If you find yourself without nmcli then configure .yaml file
+# /etc/netplan/00-installer-config-wifi.yaml          this will contain the wifi information put in on the install, you can change this file statically ---
+# for every wifi connection you make without nmcli.
+# sudo netplan apply       for any change made in the 00-installer-config-wifi.yaml file made
+
+# important commands for nmcli and general
+# ifconfig -a         the bread and butter of connection, will also show you your interface names which are important for any step
+# sudo nmcli dev wifi connect <SSID> password "<password>"          Make sure you have parentheses on the password, this will connect you to any SSID that are not hidden
+# nmcli dev wifi list      this will show you the MAC addresses, SSIDs, and other information
+# nmcli radio wifi on      This will enable wifi on the device if it isn't already on, nmcli radio all on     will work as well.
+# nmcli device status     will give you status update on wifi, ethernet, loopback, and peer to peer
+# sudo reboot now         Restarts device, one that I don't want to forget 
+# sudo shutdown now       Also important to remember 
+
+# scrolling up and down
+# screen        <Ctrl + a> [          this is one that I definitely want to remember, it allows for scrolling up and down with the arrow keys. My device wasn't ---
+# allowing me to scroll with shift page-up-page-down or any of the other commands I tried...If you use the screen make sure you start screen before doing commands.
+# Shift + PageUp (pagedown) 
+
+
