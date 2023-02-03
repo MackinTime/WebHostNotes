@@ -2,7 +2,7 @@
 # Immediately sudo apt-get Network-Manager
 # If you find yourself without nmcli then configure .yaml file
 # /etc/netplan/00-installer-config-wifi.yaml          this will contain the wifi information put in on the install, you can change this file statically ---
-# for every wifi connection you make without nmcli.
+# for every wifi connection you make without nmcli. I will create a separate file that shows exactly what's inside
 # sudo netplan apply       for any change made in the 00-installer-config-wifi.yaml file made
 
 # important commands for nmcli and general
@@ -19,4 +19,4 @@
 # allowing me to scroll with shift page-up-page-down or any of the other commands I tried...If you use the screen make sure you start screen before doing commands.
 # Shift + PageUp (pagedown) 
 
-
+# sudo iwlist wlp4s0 <name of your inter
