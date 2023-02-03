@@ -1,0 +1,24 @@
+# Apache2
+#/etc/init.d/apache2 restart        OR      sudo systemctl stop apache2.service
+# sudo systemctl stop apache2.service
+# sudo systemctl start apache2.service
+# sudo systemctl status apache2.service
+
+# installation and updating
+# apt-get update
+# apt-get upgrade
+# sudo apt-get install <package>
+
+# basic commands
+# ls        shows whats in current working directory
+# cd        change directory
+# cd ..     change directory one back
+# cd /      change to OG folder
+# nano      opens in text editor
+# sudo touch <yourstupidfile.doc> </a/location/here/>            creates file
+# mv <yourstupidfile.doc> </a/location/here>            moves a file
+# cp <copiablefile.doc> </a/location/here/>  OR  </a/file/here/>         copies a file
+# rm <aremovablefile.doc>           deletes a file
+
+# Locations of important things for the webserver
+# /var/www/      contains wordpress 
