@@ -9,8 +9,12 @@
 # apt-get upgrade
 # sudo apt-get install <package>
 
+#ufw                  firewall
+
+
 # basic commands
 # ls        shows whats in current working directory
+# ls -l     shows file permissions
 # cd        change directory
 # cd ..     change directory one back
 # cd /      change to OG folder
@@ -19,6 +23,15 @@
 # mv <yourstupidfile.doc> </a/location/here>            moves a file
 # cp <copiablefile.doc> </a/location/here/>  OR  </a/file/here/>         copies a file
 # rm <aremovablefile.doc>           deletes a file
+# chmod a+rwx /path/to/file          Gives full permission to a singular file
+# sudo chmod -R a+rwx /path/to/folder          Gives full permission for folder and files inside
 
 # Locations of important things for the webserver
-# /var/www/      contains wordpress 
+# /var/www/      contains wordpress and php
+# /etc/netplan/   Contains static configuration for networks
+# /etc/phpmyadmin/    configuration apache and php
+# /etc/apache2/
+
+
+#
+
