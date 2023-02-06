@@ -1,8 +1,7 @@
 # Apache2
-#/etc/init.d/apache2 restart        OR      sudo systemctl stop apache2.service
-# sudo systemctl stop apache2.service
-# sudo systemctl start apache2.service
-# sudo systemctl status apache2.service
+# sudo systemctl stop apache2
+# sudo systemctl start apache2
+# sudo systemctl status apache2
 
 # installation and updating
 # apt-get update
