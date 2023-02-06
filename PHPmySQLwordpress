@@ -1,0 +1,29 @@
+# Things that are highly specific to what you need to do for the webhost
+
+# sudo a2ensite yourwebsitefolder.conf            this will activate your website in apache after you've config (config example will be posted) 
+
+# Php installs
+# sudo apt-get php php-cgi libapache2-mod-php php-mbstring php-all-dev
+# sudo apt-get phpmyadmin        (don't configure)
+
+# my SQL
+# sudo apt-get install mysql-server
+# sudo apt-get install php8.2-mysql
+# sudo mysql
+# SELECT user,authentication_string,host FROM mysql.user;
+# ALTER USER 'root'@localhost' IDENTIFIED WITH mysql_native_password BY '*apasswordforphp*';
+# FLUSH PRIVILEGES;
+# mysql -u root -p
+# CREATE USER 'yourname'@'localhost' IDENTFIED BY 'anotherpassword';
+# GRANT ALL PRVILEGES ON *.* TO 'yourname'@'localhost' WITH GRANT OPTION;
+# mysql is now configured
+
+# Apache configuration
+# sudo a2enmod php(yourversion)
+# /var/www/yourwebsite.com$ sudo ln -s /etc/phpmyadmin/                   adds link to php myadmin in yourwebsite folder
+# in browser --->   www.yourwebsite.com/phpmyadmin           lets you log into your phpmyadmin
+
+# wordpress.org/download         I'll document how to do from terminal at a later date
+# tar -xvf wordpress.tar.gz
+# find wordpress folder then     sudo cp -r * /var/www/yourwebsite.com           this copies all wordpress things to your website
+# sudo rm index.html (you want only index.php) 
