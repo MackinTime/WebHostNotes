@@ -27,3 +27,8 @@
 # tar -xvf wordpress.tar.gz
 # find wordpress folder then     sudo cp -r * /var/www/yourwebsite.com           this copies all wordpress things to your website
 # sudo rm index.html (you want only index.php) 
+
+# IMPORTANT
+# When changing IP Address of webhost find function.php within your theme you are using for wordpress /var/www/yourwebsite.com/wp-content/themes/thetheme
+# update_option( 'siteurl', 'NEW IP ADDRESS' );
+# update_option( 'home', 'NEW IP ADDRESS' );
