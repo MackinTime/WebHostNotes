@@ -1,0 +1,5 @@
+# On domain name registrar create A record that points to IP address
+# change 000-default.conf file in /etc/apache2/sites-available/ to point to your domain name
+# add line in virtual host         ServerName <yourwebsite.com>
+# add line under that line         ServerAlias <www.yourwebsite.com>
+# sudo systemctl restart apache2
